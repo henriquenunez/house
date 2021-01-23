@@ -14,4 +14,4 @@ This part of the project deals with
 - BC547 transistor.
 - Gate transmitter for car, like the following:
 
-![](assets/gate_remote.webp)
+![](../assets/gate_remote.webp)
