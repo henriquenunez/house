@@ -1,5 +1,5 @@
 ## MQTT Broker
 
-Since this project is using MQTT for inter-device communication, setting up a broker is needed.
+This part of the project uses MQTT.
 
-However, for now, no custom setup is needed.
+
