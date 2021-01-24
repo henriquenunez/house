@@ -1,0 +1,12 @@
+capsule-info {
+  display-name (Home Assistant)
+  developer-name (Hiram)
+  description ("Home assistant. Gate activator.")
+  dispatch-name (Home Assistant)
+  // Set your own image for your capsule's icon
+  icon-asset (images/icons/bixby_launcher.png)
+
+  search-keywords {
+    keyword (home assistant)
+  }
+}

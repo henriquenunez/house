@@ -1,0 +1,7 @@
+hints {
+  uncategorized {
+        hint ("In Home Assistant, activate gate") {
+          preferred-hint ("Activate gate")
+        }
+    }
+}
