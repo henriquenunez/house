@@ -8,6 +8,10 @@ Video demonstrations on [this playlist](https://youtube.com/playlist?list=PL5XBY
 
 Gate activation via [telegram bot and ESP32](home_gate/).
 
+## PC remote control
+
+Remotely [suspend the PC](pc_remote_control/)
+
 ## Light automation (WIP)
 
 ## Bixby/Alexa integration (WIP) 
