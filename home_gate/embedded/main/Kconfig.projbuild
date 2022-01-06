@@ -1,13 +1,44 @@
-menu "Example Configuration"
+menu "Gate Opener Configuration"
 
-    config BROKER_URL
+    config BROKER_URI
         string "Broker URL"
-        default "mqtt://mqtt.eclipse.org"
+        default "mqtts://mqtt.eclipseprojects.io:8883"
         help
-            URL of the broker to connect to
+            URL of the mqtt broker the board will connect to.
 
-    config BROKER_URL_FROM_STDIN
+    config BROKER_CERTIFICATE_OVERRIDE
+        string "Broker certificate override"
+        default ""
+        help
+            Please leave empty if broker certificate included from a textfile; otherwise fill in a base64 part of PEM
+            format certificate
+
+    config BROKER_CERTIFICATE_OVERRIDDEN
         bool
-        default y if BROKER_URL = "FROM_STDIN"
+        default y if BROKER_CERTIFICATE_OVERRIDE != ""
+
+    config BROKER_BIN_SIZE_TO_SEND
+        # This option is not visible and is used only to set parameters for example tests
+        # Here we configure the data size to send and to be expected in the python script
+        int
+        default 20000
+
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID (network name) for the board to connect to.
+
+    config ESP_WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2).
+
+    config ESP_MAXIMUM_RETRY
+        int "Maximum retry"
+        default 5
+        help
+            Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
 
 endmenu
